@@ -7,7 +7,6 @@ import {
 } from "react-icons/ti";
 
 const Tweet = (props) => {
-  // console.log("props from tweet component", props);
   const handleLike = (e) => {
     e.preventDefault();
 
@@ -50,9 +49,9 @@ const Tweet = (props) => {
           <span>{replies !== 0 && replies}</span>
           <button className="heart-button" onClick={handleLike}>
             {hasLiked === true ? (
-              <TiHeartFullOutline color="e0245e" className="tweet-icon" />
+              <TiHeartFullOutline color="#e0245e" className="tweet-icon" />
             ) : (
-              <TiHeartOutline className="className" />
+              <TiHeartOutline className="tweet-icon" />
             )}
           </button>
           <span>{likes !== 0 && likes}</span>
